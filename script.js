@@ -21,3 +21,8 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 
 fadeElements.forEach(el => observer.observe(el));
+function toggleMenu() {
+    document.querySelector("nav").classList.toggle("active");
+}
+
+
